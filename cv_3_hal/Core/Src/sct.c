@@ -6,7 +6,6 @@
  */
 
 #include <stdint.h>
-#include "stm32f0xx.h"
 #include "sct.h"
 #include "main.h"
 
@@ -28,8 +27,8 @@ void sct_led(uint32_t value)
 		value>>=1;
 
 	}
-	HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, 0);
 	HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, 1);
+	HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, 0);
 
 }
 
