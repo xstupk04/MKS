@@ -148,14 +148,7 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-  /*  uint8_t buff[4];
-    buff[0] = 0x00;
-    buff[1] = (int8_t)(10);
-    buff[2] = (int8_t)(-3);
-    buff[3] = 0;
-    USBD_HID_SendReport(&hUsbDeviceFS, buff, sizeof(buff));
-    HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
-    */
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
